@@ -1,0 +1,13 @@
+.container {
+    max-width: 300px; /* Smanjite maksimalnu širinu kontejnera */
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%; /* Osigurajte da polja za unos zauzimaju punu širinu kontejnera */
+}

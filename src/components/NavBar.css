@@ -1,0 +1,24 @@
+/* dodao */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f9f8e0!important;
+    overflow-x: auto!important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #0866ff;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: rgb(214, 171, 32);
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: rgb(64, 217, 17) ; /* Boja za aktivan link */
+  }
