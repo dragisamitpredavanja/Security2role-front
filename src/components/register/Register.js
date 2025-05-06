@@ -11,24 +11,8 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [admin, setAdmin] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post("http://localhost:8080/user/register", {
-        username,
-        password,
-        name,
-        address,
-        email,
-        admin,
-      });
-      // Redirektujte korisnika nakon uspešne registracije
-      navigate("/login");
-    } catch (error) {
-      setError("Registration failed. Please check your input and try again");
-      console.error("Registration failed:", error);
-    }
-  };
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
